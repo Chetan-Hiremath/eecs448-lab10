@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <h2>Create User</h2>
+  <body>
+  <script>
+        function submitUser()
+        {
+          var a = document.getElementById("name").value;          
+          if (a == "")
+          {
+            alert("Username should not be empty!")
+            return false;
+          }
+        }
+  </script>
+      <p style = 'font-weight:bold'>Enter the name of the new user: </p>
+      <form action = "CreateUser.php" method = "POST" onsubmit = " return submitUser()">
+        <p style = 'font-weight:bold'>Account: </p>
+        Name: <input type = "text" id = "name" name = "name" value = "">
+        <input type = "submit" value = "Submit User">
+        <input type = "reset" value = "Reset">
+      </form>
+  </body>
+</html>
