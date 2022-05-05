@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  <script>
+        function deletePost()
+        {
+          var a = document.getElementById("post").value;          
+          if (a == "")
+          {
+            alert("Post should not be empty!")
+            return false;
+          }
+        }
+  </script>
+      <p style = 'font-weight:bold'>Enter the post of the user to delete it. You should check the database of the View Users Posts link and type the correct content or post of the correct user!</p>
+      <form action = "DeletePosts.php" method = "POST" onsubmit = " return deletePost()">
+        <p style = 'font-weight:bold'>Post: </p>
+        <input type = "text" id = "post" name = "post" value = "">
+        <input type = "submit" value = "Delete Post">
+        <input type = "reset" value = "Reset">
+      </form>
+  </body>
+</html>
