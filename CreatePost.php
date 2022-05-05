@@ -1,7 +1,7 @@
 <?php
     $user = $_POST["name"];
     $post = $_POST["post"];
-    $mysqli = new mysqli("mysql.eecs.ku.edu", "c743h357", "pieJeo7g", "c743h357");
+    $mysqli = new mysqli("129.237.87.5", "c743h357", "pieJeo7g", "c743h357");
     if($mysqli->connect_errno){
         printf("Connect failed: %s\n", $mysqli->connect_error);
         exit();
