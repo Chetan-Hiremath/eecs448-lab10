@@ -4,8 +4,8 @@ if ($conn->connect_error)
 {
   die("Connection failed: " . $conn->connect_error);
 }
-$name = $_POST['name'];
-$sql = "INSERT INTO Users (UserID) VALUES ('$name')";
+$user = $_POST['name'];
+$sql = "INSERT INTO Users (UserID) VALUES ('$user')";
 if ($conn->query($sql) == TRUE) 
 {
   echo "New user is created successfully!";
