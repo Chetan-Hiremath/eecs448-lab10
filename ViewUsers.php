@@ -5,7 +5,7 @@
 <b>Users: </b><br>
 <p></p>
 <tr>
-<th>User ID</th>
+<th>UserID</th>
 </tr>
 <?php
 $conn = new mysqli("129.237.87.5", "c743h357", "pieJeo7g", "c743h357");
